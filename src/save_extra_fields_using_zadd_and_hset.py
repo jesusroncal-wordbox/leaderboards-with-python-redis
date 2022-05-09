@@ -1,16 +1,16 @@
 import json
 from typing import Dict, Final, List
-from providers import get_redis_module
+from .providers import get_redis_module
 
-from common_constants import COUNTRY_CODE_ALIAS
-from common_constants import FIRST_PLACE_OF_LEADERBOARD_BY_COUNTRY
-from common_constants import LAST_PLACE_OF_LEADERBOARD_BY_COUNTRY
-from common_constants import LEADERBOARD_KEY
-from common_constants import MEXICO_COUNTRY_CODE
-from common_constants import NAME_ALIAS
-from common_constants import TOTAL_EXPERIENCE_ALIAS
-from common_constants import URL_PHOTO_ALIAS
-from common_constants import USER_ID_ALIAS
+from .common_constants import COUNTRY_CODE_ALIAS
+from .common_constants import FIRST_PLACE_OF_LEADERBOARD_BY_COUNTRY
+from .common_constants import LAST_PLACE_OF_LEADERBOARD_BY_COUNTRY
+from .common_constants import LEADERBOARD_KEY
+from .common_constants import MEXICO_COUNTRY_CODE
+from .common_constants import NAME_ALIAS
+from .common_constants import TOTAL_EXPERIENCE_ALIAS
+from .common_constants import URL_PHOTO_ALIAS
+from .common_constants import USER_ID_ALIAS
 
 
 PARAMS: Final[Dict] = {
