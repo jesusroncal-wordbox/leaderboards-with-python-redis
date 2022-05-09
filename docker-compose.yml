@@ -1,0 +1,12 @@
+version: '3'
+services:
+  redis:
+    image: redis:6-alpine
+    container_name: redis
+    hostname: redis
+    ports:
+      - 6379:6379
+    restart: unless-stopped
+    command: redis-server --save 3600 1 --loglevel warning --requirepass 237fbb82a866489a9ab7968752ea21be
+    volumes:
+      - ./redis/data:/data

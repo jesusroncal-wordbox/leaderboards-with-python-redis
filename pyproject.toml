@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "backend-services-leaderboard"
+version = "1.0.0"
+description = "Services related to leaderboards and such"
+authors = ["Jesus Roncal <jesus@wordbox.ai>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+redis = "^4.2.2"
+python-dotenv = "^0.20.0"
+pydantic = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+pandas = "^1.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
