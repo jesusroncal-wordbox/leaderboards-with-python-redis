@@ -1,7 +1,9 @@
 import os
-import redis
-from dotenv import load_dotenv
 from typing import Final
+
+from dotenv import load_dotenv
+
+import redis  # type: ignore
 
 
 load_dotenv()
@@ -20,7 +22,10 @@ def get_redis_module() -> redis.Redis:
     redis_port = int(os.getenv(REDIS_PORT_KEY, INTEGER_DEFAULT))
     redis_database = int(os.getenv(REDIS_DATABASE_KEY, INTEGER_DEFAULT))
     redis_password = os.getenv(REDIS_PASSWORD_KEY, None)
-    redis_client = redis.StrictRedis(
-        host=redis_host, port=redis_port, db=redis_database, password=redis_password, decode_responses=True
+    return redis.StrictRedis(
+        host=redis_host,
+        port=redis_port,
+        db=redis_database,
+        password=redis_password,
+        decode_responses=True,
     )
-    return redis_client

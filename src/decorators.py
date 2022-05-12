@@ -15,4 +15,5 @@ def timer(func):
         elapsed_time = toc - tic
         print(WRAPER_TIME_MSG.format(elapsed_time=elapsed_time))
         return value
+
     return wrapper_timer

@@ -17,8 +17,9 @@ TENTH_PLACE_OF_LEADERBOARD_BY_COUNTRY: Final[int] = 9
 # user
 COUNTRY_CODE_ALIAS: Final[str] = "countrycode"
 NAME_ALIAS: Final[str] = "name"
+LEVEL_ALIAS: Final[str] = "level"
 PLACE_ALIAS: Final[str] = "place"
 TOP_ALIAS: Final[str] = "top"
 TOTAL_EXPERIENCE_ALIAS: Final[str] = "totalexperience"
-URL_PHOTO_ALIAS: Final[str] = "urlphoto"
+PHOTO_URL_ALIAS: Final[str] = "photourl"
 USER_ID_ALIAS: Final[str] = "userid"
